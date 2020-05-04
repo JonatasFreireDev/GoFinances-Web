@@ -9,7 +9,7 @@ export const Container = styled.div<ContainerProps>`
   padding: 30px 0;
 
   header {
-    width: 1120px;
+    max-width: 1120px;
     margin: 0 auto;
     padding: ${({ size }) => (size === 'small' ? '0 20px ' : '0 20px 150px')};
     display: flex;
@@ -28,6 +28,8 @@ export const Container = styled.div<ContainerProps>`
         }
 
         &:hover {
+          padding-bottom: 10px;
+          border-bottom: 3px solid orange;
           opacity: 0.6;
         }
       }
